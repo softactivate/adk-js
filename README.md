@@ -1,5 +1,16 @@
 # Agent Development Kit (ADK) for TypeScript
 
+> **SoftActivate fork notice.** This repository tracks
+> [google/adk-js](https://github.com/google/adk-js) for the SoftActivate agent
+> engine. As of 2.0.0 it carries **no source changes**: `main` is upstream
+> `adk-v2.0.0` and the engine depends on `@google/adk` directly. The earlier
+> fork-only patch (live streaming of sub-agent events from `AgentTool`, PR
+> google/adk-js#334) is superseded by upstream's `NodeTool` + invocation
+> `eventQueue` and is kept only as the tag
+> `archive/agent-tool-event-streaming-1.2.0`. If a patch is ever needed again,
+> publish `core/` as `@softactivate/adk` (see `ai-agent/scripts/npm-publish.js`)
+> and switch the engine's dependency to `"@google/adk": "npm:@softactivate/adk@<version>"`.
+
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 [![NPM Version](https://img.shields.io/npm/v/@google/adk)](https://www.npmjs.com/package/@google/adk)
 [![r/agentdevelopmentkit](https://img.shields.io/badge/Reddit-r%2Fagentdevelopmentkit-FF4500?style=flat&logo=reddit&logoColor=white)](https://www.reddit.com/r/agentdevelopmentkit/)
